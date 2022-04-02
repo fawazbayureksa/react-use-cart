@@ -12,10 +12,11 @@ const Home = () => {
                         return (
                             <Card
                             item={item} 
-                            namaProduk={item.namaproduk} 
+                            title={item.title} 
                             img={item.img} 
                             key={index}
-                            harga={item.harga}
+                            price={item.price}
+                            quantity={item.quantity}
                             />
                         )
                     })}

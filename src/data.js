@@ -7,27 +7,31 @@ const data = {
     productData:[
         {
             id:1,
-            namaproduk:"iPhone X",
+            title:"iPhone X",
             img:img1,
-            harga:699
+            price:699,
+            quantity:10
         },
         {
             id:2,
-            namaproduk:"iPhone Xr",
+            title:"iPhone Xr",
             img:img2,
-            harga:799
+            price:799,
+            quantity:10
         },
         {
             id:3,
-            namaproduk:"iPhone Xs",
+            title:"iPhone Xs",
             img:img3,
-            harga:899
+            price:899,
+            quantity:10,
         },
         {
             id:4,
-            namaproduk:"iPhone XI",
+            title:"iPhone XI",
             img:img4,
-            harga:999
+            price:999,
+            quantity:10
         }
 
     ] 
