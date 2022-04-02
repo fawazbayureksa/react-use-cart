@@ -1,6 +1,11 @@
-import React from 'react'
+import React from 'react';
+import  {useCart}  from 'react-use-cart';
 
-export default function itemCart(props) {
+
+const Card = (props) => {
+
+    const {addItem} = useCart('');
+    // console.log(props.item);
   return (
     <div className='col-md-4 col-11 col-lg-3 mx-0 mb-3'>
         <div className='card'>
@@ -12,9 +17,12 @@ export default function itemCart(props) {
                     <div className='text-muted fs-5 my-3'>
                         $ {props.harga}
                     </div>
-                    <button className='btn btn-success btn-md'>Add Cart</button>
+                    <button className='btn btn-success btn-md' onClick={() => addItem(props.item)}>Add Cart</button>
             </div> 
         </div>
     </div>
   )
 }
+
+
+export default Card;
