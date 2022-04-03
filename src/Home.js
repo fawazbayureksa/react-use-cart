@@ -9,6 +9,7 @@ const Home = () => {
             <section className="py-4 container">
                 <div className="row justify-content-center">
                     {data.productData.map((item,index) => {
+                      
                         return (
                             <Card
                             item={item} 
